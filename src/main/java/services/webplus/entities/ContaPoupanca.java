@@ -7,15 +7,14 @@ import lombok.Setter;
 @Setter
 public class ContaPoupanca extends Conta{
 
-    @Override
-    public void transferir(double valor, Conta destino) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'transferir'");
+    public ContaPoupanca(Cliente cliente) {
+        super(cliente);
     }
 
     @Override
     public void imprimirExtrato() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'imprimirExtrato'");
+        System.out.println("=== Extrato Conta Poupança ===");
+		super.imprimirInfosComuns();
     }
+
 }

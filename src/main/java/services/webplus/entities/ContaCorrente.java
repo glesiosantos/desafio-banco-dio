@@ -7,16 +7,13 @@ import lombok.Setter;
 @Setter
 public class ContaCorrente extends Conta {
 
-    @Override
-    public void transferir(double valor, Conta destino) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'transferir'");
+    public ContaCorrente(Cliente cliente) {
+        super(cliente);
     }
 
     @Override
     public void imprimirExtrato() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'imprimirExtrato'");
+        System.out.println("=== Extrato Conta Corrente ===");
+		super.imprimirInfosComuns();
     }
-
 }
